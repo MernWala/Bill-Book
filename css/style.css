@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    transition: all ease .4s;
 }
 
 html{
@@ -10,18 +11,18 @@ html{
 
 .__custom-body-css{
     background-color: var(--dark_custom)!important;
-    /* padding-top: 8rem; */
+    padding-top: 8rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .navigation{
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 7rem;
+    height: 8rem;
     backdrop-filter: blur(5px);
-    box-shadow: .5rem .5rem 1rem;
     padding: 0% 7% 0% 7%;
     display: flex;
     align-items: center;
@@ -37,7 +38,7 @@ html{
 .logo{
     position: relative;
     height: calc(100% - .5rem);
-    width: 7rem;
+    width: 10rem;
 }
 
 .navigation-logo{
@@ -57,14 +58,14 @@ html{
 
 .navigation-brand-A,
 .navigation-brand-B{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--colr_1_sec);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
 .navigation-brand-B{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #000;
 }
 

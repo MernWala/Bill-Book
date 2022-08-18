@@ -3,6 +3,11 @@ let brandColorB = document.querySelectorAll(".navigation-brand-B");
 let mainBody = document.querySelector(".__custom-body-css").style.backgroundColor
 let navExtentBtn = document.querySelector('.navigation-extend-btn')
 let navModalOpner = document.querySelector('.navigationModalOpner')
+let navMainContainer = document.querySelector(".navigation-extend-container");
+let nav = document.getElementById("Navbar");
+let logo = document.querySelector(".logo");
+let brandA = document.querySelectorAll(".navigation-brand-A");
+let brandB = document.querySelectorAll(".navigation-brand-B");
 
 mainBody = "var(--dark_custom)"
 navExtentBtn.style.color = "var(--dark_custom)"
@@ -29,3 +34,24 @@ navModalOpner.addEventListener('mouseout', () => {
     navExtentBtn.style.color="var(--light)"
 });
 
+window.addEventListener('scroll', () => {
+    if(scrollY > 50){
+        nav.style.boxShadow = "0.5rem 0.5rem 1rem";
+        nav.style.height = "5rem"
+        logo.style.width = "5rem"
+        navMainContainer.style.padding = "0px"
+        for(i=0; i<brandA.length; i++)
+            brandA[i].style.fontSize = "2.5rem"
+        for(j=0; j<brandB.length; j++)
+            brandB[j].style.fontSize = "2rem"
+    }else if(scrollY < 50){
+        nav.style.boxShadow = "none";
+        nav.style.height = "8rem";
+        logo.style.width = "10rem"
+        for(i=0; i<brandA.length; i++)
+            brandA[i].style.fontSize = "3.5rem"
+        for(j=0; j<brandB.length; j++)
+            brandB[j].style.fontSize = "3rem"
+            navMainContainer.style.padding = ".5rem .7rem"
+    }
+});
