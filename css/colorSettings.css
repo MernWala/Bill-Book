@@ -1,0 +1,17 @@
+:root{
+    /* Dark And Light Theam */
+    --light : #f1f2e1;
+    --dark_custom : #181818;
+    
+    /* color set -> 1 */
+    --colr_1_pri : #6f0202;
+    --colr_1_sec : #b30000;
+    
+    /* color set -> 2 */
+    --colr_2_pri : #0300b4;
+    --colr_2_sec : #0052ef;
+    
+    /* color set -> 3 */
+    --colr_3_pri : #365f07;
+    --colr_3_sec : #69923c;
+}

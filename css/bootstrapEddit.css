@@ -1,0 +1,7 @@
+.modal-title{
+    font-size: calc(100% + 1rem);
+}
+
+.modal-header .close{
+    font-size: calc(100% + 2rem);
+}
