@@ -14,4 +14,7 @@
     /* color set -> 3 */
     --colr_3_pri : #365f07;
     --colr_3_sec : #69923c;
+
+    --navNonActive : #f1f2e18d;
+    --navActive : #f1f2e1;
 }

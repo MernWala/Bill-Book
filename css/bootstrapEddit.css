@@ -5,3 +5,53 @@
 .modal-header .close{
     font-size: calc(100% + 2rem);
 }
+
+#navigation-main-data .modal-lg{
+    min-width: 90vw;
+}
+
+#navModal{
+    align-items: inherit;
+}
+
+#navModal .modal-content{
+    border-radius: 0px;
+    border: 1px solid var(--colr_1_pri);
+}
+
+#navModal .modal-content .modal-body{
+    background-color: var(--dark_custom);
+    padding: 2rem;
+}
+
+#navModal .modal-content .modal-header{
+    padding: .4rem 1rem;
+    border-radius: 0px;
+    background-color: var(--colr_1_pri);
+}
+
+#navModal .modal-content .modal-header h4,
+#navModal .modal-content .modal-header button{
+    color: floralwhite;
+    opacity: 1;
+}
+
+#navModal .modal-content .modal-header button{
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-bottom: .5rem!important;
+}
+
+.close:focus{
+    outline: 0px;
+}
+
+.__indexModal_sub-part-1-ul li{
+    margin-right: 2.5rem;   
+}
+
+.__indexModal_sub-part-1-ul li .nav-link{
+    color: var(--navNonActive);
+    font-size: calc(100% + .5rem);
+}

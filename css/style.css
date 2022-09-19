@@ -26,6 +26,7 @@ html{
     padding: 0% 7% 0% 7%;
     display: flex;
     align-items: center;
+    z-index: 999;
 }
 
 .logo-brand_main-container{
@@ -84,5 +85,116 @@ html{
 section{
     height: 100vh;
     width: 100%;
-    border: 1px solid #fff;
+}
+
+/* Section - 1 starts here */
+#section1{
+    height: calc(100vh - 8rem);
+    background-image: url('../img/Section_1_Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section1-closer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1-closer-mainData{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1-closer-mainData svg{
+    height: 50rem;
+}
+
+.section1-closer-mainData .section-1-mainContent_body{
+    position: relative;
+    height: 100%;
+    width: 45%;
+}
+
+.ListActive{
+    color: var(--navActive)!important;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-item::after{
+    content: "";
+    position: relative;
+    width: 1.8rem;
+    height: 2.5px;
+    background-color: var(--navNonActive);
+    border-radius: 1rem;
+    bottom: 0px;
+}
+
+.navigation-brand-A_heading,
+.navigation-brand-B_heading{
+    font-size: 5rem;
+    color: var(--colr_1_sec);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+}
+
+.navigation-brand-B_heading{
+    font-size: 4.5rem;
+    color: var(--light);
+}
+
+.navigation-brand-A_body,
+.navigation-brand-B_body{
+    font-size: 2.5rem;
+}
+
+.navigation-brand-A_body{
+    font-weight: 550;
+    color: var(--colr_1_sec);
+}
+
+.navigation-brand-B_body{
+    color: var(--light);
+}
+
+/* Section 1 ends here */
+
+
+
+
+
+/* Custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: .8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--dark_custom);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background: var(--colr_1_sec);
+    box-shadow: inset 0 0 3px rgba(0, 0, 39, .5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--colr_1_pri);
 }

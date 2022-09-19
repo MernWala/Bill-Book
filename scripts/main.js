@@ -8,6 +8,7 @@ let nav = document.getElementById("Navbar");
 let logo = document.querySelector(".logo");
 let brandA = document.querySelectorAll(".navigation-brand-A");
 let brandB = document.querySelectorAll(".navigation-brand-B");
+let active = document.querySelectorAll('.ListActive');
 
 mainBody = "var(--dark_custom)"
 navExtentBtn.style.color = "var(--dark_custom)"
@@ -16,12 +17,20 @@ window.addEventListener("load", () => {
     if(mainBody == "var(--dark_custom)"){
         for(let i=0; i<brandColorB.length; i++){
             brandColorB[i].style.color = "var(--light)";
-            navExtentBtn.style.color = "var(--light)"
+            navExtentBtn.style.color = "var(--light)";
+        }
+        for(i=0; i<document.getElementsByTagName("h3").length; i++){
+            document.getElementsByTagName("h3")[i].style.color = "var(--light)";
         }
     }else{
         for(let i=0; i<brandColorB.length; i++){
             brandColorB[i].style.color = "var(--dark_custom)";
         }
+    }
+
+    for(i=0; i<active.length; i++){
+        active[i].childNodes[3].style.color = "var(--colr_1_sec)";
+        active[i].childNodes[3].style.fontWeight = "800";
     }
 });
 
@@ -37,8 +46,8 @@ navModalOpner.addEventListener('mouseout', () => {
 window.addEventListener('scroll', () => {
     if(scrollY > 50){
         nav.style.boxShadow = "0.5rem 0.5rem 1rem";
-        nav.style.height = "5rem"
-        logo.style.width = "5rem"
+        nav.style.height = "6rem"
+        logo.style.width = "6rem"
         navMainContainer.style.padding = "0px"
         for(i=0; i<brandA.length; i++)
             brandA[i].style.fontSize = "2.5rem"
