@@ -170,6 +170,20 @@ li{
     color: var(--light);
 }
 
+.login_signup_btn-container p{
+    background-color: var(--colr_1_sec);
+    height: 100%;
+    margin: 0.5rem 0rem;
+    font-size: calc(100% + .3rem);
+    font-weight: lighter;
+}
+
+.login_signup_btn-container .nav-link{
+    color: var(--light);
+    font-size: calc(100% + .3rem);
+    font-weight: lighter;
+}
+
 /* Section 1 ends here */
 
 
