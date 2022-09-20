@@ -11,7 +11,7 @@
 }
 
 #navModal{
-    align-items: inherit;
+    align-items: center;
 }
 
 #navModal .modal-content{
@@ -51,15 +51,22 @@
     margin-bottom: 3rem;
 }
 
-.__indexModal_sub-part-1-ul li{
-    margin-right: 2.5rem;
-}
-
-.__indexModal_sub-part-1-ul li .nav-link{
-    color: var(--navNonActive);
-    font-size: calc(100% + .5rem);
-}
-
 .modal{
     backdrop-filter: blur(5px);
+}
+
+.nav-item{
+    min-width: fit-content;
+}
+
+.modal-lg{
+    min-width: fit-content!important;
+}
+
+.modal-content{
+    height: fit-content!important;
+}
+
+.modal-header{
+    border-bottom: 0!important;
 }

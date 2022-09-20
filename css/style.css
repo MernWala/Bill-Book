@@ -183,8 +183,83 @@ li{
     font-size: calc(100% + .3rem);
     font-weight: lighter;
 }
-
 /* Section 1 ends here */
+
+
+/* Modal desine related  start here*/
+.__indexModal_sub-part-1-ul li,
+.__indexModal_sub-part-2-ul li{
+    margin-right: 2.5rem;
+    font-size: calc(100% + .5rem);
+}
+
+.__indexModal_sub-part-1-ul li .nav-link{
+    color: var(--navNonActive);
+}
+
+.__indexModal_sub-part-2-ul li .nav-link{
+    color: var(--light);
+}
+
+.__indexModal_sub-part-1 h3{
+    display: flex;
+    align-items: center;
+}
+
+.__indexModal_sub-part-1 h3 i{
+    font-size: 1rem;
+    margin-left: 1rem;
+    border-bottom: none;
+    margin-top: 0.5rem;
+    color: var(--navNonActive);  /* color will change dynamically when hit login */
+}
+
+.__modal-hr{
+    background: var(--modal_hr-light);
+}
+
+.__indexModal_sub-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0rem 3rem 0rem;
+}
+
+.__indexModal_sub-part-2-closer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 4.5rem 0.7rem 4.5rem;
+    border: 1px solid var(--colr_1_sec);
+}
+
+.__indexModal_sub-part-2-closer .ModalSubLogo{
+    position: relative;
+    top: -1.7rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.7rem 0.9rem;
+    /* border: 1px solid var(--colr_1_sec); */
+    background: var(--colr_1_sec);
+}
+
+.__indexModal_sub-part-2-closer .ModalSubData{
+    position: relative;
+    top: -0.7rem;
+}
+
+.__indexModal_sub-part-2 h4{
+    color: var(--light);
+}
+
+.ModalSubLogo i{
+    color: #fff;
+    font-size: 2.3rem;
+}
+/* Modal desine related  End here*/
+
+
 
 
 
@@ -211,4 +286,10 @@ li{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--colr_1_pri);
+}
+
+/* Custom selector */
+::selection{
+    background: var(--colr_1_sec);
+    color: var(--light);
 }

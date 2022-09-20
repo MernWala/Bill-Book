@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
 
     <style>
-        .nav-item:first-child:after {
+        .nav-item.active:first-child:after {
             background-color: var(--colr_1_sec);
         }
     </style>
@@ -36,7 +36,7 @@
                     <div class="__indexModal_sub-part-1">
                         <h3 style="text-decoration: underline;">Navigation</h3>
                         <ul class="navbar-nav flex-row __indexModal_sub-part-1-ul pl-5">
-                            <li class="nav-item" style="">
+                            <li class="nav-item active" style="">
                                 <a href="#" class="nav-link ListActive">
                                     <i class="fa fa-home" aria-hidden="true"></i>
                                     <span class="listFirstLetter">H</span>ome
@@ -67,7 +67,95 @@
                     </div>
 
                     <div class="__indexModal_sub-part-1">
-                        <h3 style="text-decoration: underline;">BillBook Navs</h3>
+                        <h3>
+                            Receipt Navs
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </h3>
+                        <ul class="navbar-nav flex-row __indexModal_sub-part-2-ul pl-5">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-chain" aria-hidden="true"></i>
+                                    <span class="listFirstLettter">C</span>reate New
+                                </a>
+                            </li> 
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                    <span class="listFirstLettter">D</span>ismiss Bill
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <span class="listFirstLettter">P</span>ast Record
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="__indexModal_sub-part-1">
+                        <h3>
+                            Customers
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </h3>
+                        <ul class="navbar-nav flex-row __indexModal_sub-part-2-ul pl-5">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">R</span>ecord
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">M</span>anage
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-rupee" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">C</span>redit Record
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="__indexModal_sub-part-2">
+                        <div class="__indexModal_sub-part-2-closer">
+                            <div class="ModalSubLogo">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <div class="ModalSubData">
+                                <h4 >Admin Section</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="__indexModal_sub-part-1">
+                        <h3>
+                            Expanse & Stocks Manager
+                            <!-- <i class="fa fa-circle" aria-hidden="true"></i> -->
+                        </h3>
+                        <ul class="navbar-nav flex-row __indexModal_sub-part-2-ul pl-5">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-language" aria-hidden="true"></i>
+                                    <span class="listFirstLettter">S</span>tocks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                    <span class="listFirstLettter">P</span>roduct Graph
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-language" aria-hidden="true"></i>
+                                    <span class="listFirstLettter">S</span>nippets
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -3307,7 +3395,8 @@
                     <p class="mt-auto mb-0" style="line-height: 1.8rem;">
                         <span class="navigation-brand-A_heading">B</span>
                         <span class="navigation-brand-B_heading">i</span>
-                        <span class="navigation-brand-A_heading">ll</span>&nbsp;
+                        <span class="navigation-brand-A_heading">ll</span>
+                        &nbsp;
                         <span class="navigation-brand-A_heading">B</span>
                         <span class="navigation-brand-B_heading">oo</span>
                         <span class="navigation-brand-A_heading">K</span>

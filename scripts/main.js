@@ -34,7 +34,6 @@ window.addEventListener("load", () => {
     }
 });
 
-
 navModalOpner.addEventListener('mouseover', () => {
     navExtentBtn.style.color="var(--colr_1_sec)"
 });
