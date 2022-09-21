@@ -1,0 +1,26 @@
+/* Section - 1  smoth transition*/
+.login_signup_btn-container a,
+.nav-link .listFirstLetter,
+.nav-link i,
+.nav-link .nav-link::after,
+li::after{
+    transition: all .3s ease-in-out;
+}
+
+/* Section -1 Hover effect */
+.login_signup_btn-container a:hover{
+    font-weight: 650;
+}
+
+.nav-link:hover .listFirstLetter,
+.login_signup_btn-container a:hover,
+.nav-link:hover i{
+    color: var(--colr_1_sec);
+    transition: color .3s ease-in-out;
+}
+
+.nav-link:hover .nav-link::after,
+li:hover::after{
+    background-color: var(--colr_1_sec);
+    transition: background-color .3s ease-in-out;
+}

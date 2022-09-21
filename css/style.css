@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    transition: all ease .4s;
 }
 
 html{
@@ -181,7 +180,9 @@ li{
 .login_signup_btn-container .nav-link{
     color: var(--light);
     font-size: calc(100% + .3rem);
-    font-weight: lighter;
+    transition: color .3s ease-in-out;
+    font-weight: 650;
+    letter-spacing: 1.3px;
 }
 /* Section 1 ends here */
 
