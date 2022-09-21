@@ -35,11 +35,13 @@ window.addEventListener("load", () => {
 });
 
 navModalOpner.addEventListener('mouseover', () => {
-    navExtentBtn.style.color="var(--colr_1_sec)"
+    navExtentBtn.style.transition="color .3s ease-in-out";
+    navExtentBtn.style.color="var(--colr_1_sec)";
 });
 
 navModalOpner.addEventListener('mouseout', () => {
-    navExtentBtn.style.color="var(--light)"
+    navExtentBtn.style.transition="color .3s ease-in-out";
+    navExtentBtn.style.color="var(--light)";
 });
 
 window.addEventListener('scroll', () => {
