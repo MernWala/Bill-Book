@@ -19,8 +19,27 @@ li::after{
     transition: color .3s ease-in-out;
 }
 
+.login_signup_btn-container a:hover{
+    position: relative;
+    top: -3px;
+    color: floralwhite;
+    box-shadow: 0px 2px 1px black;
+}
+
 .nav-link:hover .nav-link::after,
 li:hover::after{
     background-color: var(--colr_1_sec);
     transition: background-color .3s ease-in-out;
+}
+
+.footer-closer a:hover{
+    color: var(--light)!important;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+
+.footer-closer a:hover .footer-itemIcon{
+    margin-right: .5rem;
+    transition: margin .3s ease-in, font .2s ease-in-out;
+    font-size: 1.7rem;
 }

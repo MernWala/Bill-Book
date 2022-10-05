@@ -70,3 +70,25 @@
 .modal-header{
     border-bottom: 0!important;
 }
+
+form .form-row .form-group{
+    width: 48%;
+}
+
+form .form-row .form-group input,
+form .form-row .form-group textarea{
+    font-size: 1.5rem;
+    background: none;
+    color: var(--light);
+    border: 1px solid var(--colr_1_sec);
+    font-family: 'Baloo Bhai 2', cursive;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+form .form-row .form-group input:focus,
+form .form-row .form-group textarea:focus{
+    border-color: var(--colr_1_faded);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(179 0 0 / 25%);
+}

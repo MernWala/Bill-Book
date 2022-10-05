@@ -37,18 +37,22 @@ window.addEventListener("load", () => {
 navModalOpner.addEventListener('mouseover', () => {
     navExtentBtn.style.transition="color .3s ease-in-out";
     navExtentBtn.style.color="var(--colr_1_sec)";
+    navMainContainer.style.border = "1px solid var(--colr_1_faded)";
+    navMainContainer.style.transition = "border .3s ease-in-out";
 });
 
 navModalOpner.addEventListener('mouseout', () => {
     navExtentBtn.style.transition="color .3s ease-in-out";
     navExtentBtn.style.color="var(--light)";
+    navMainContainer.style.border = "1px solid var(--colr_1_sec)";
+    navMainContainer.style.transition = "border .3s ease-in-out";
 });
 
 window.addEventListener('scroll', () => {
     if(scrollY > 50){
         nav.style.boxShadow = "0.5rem 0.5rem 1rem";
         nav.style.height = "6rem"
-        logo.style.width = "6rem"
+        logo.style.width = "7rem"
         navMainContainer.style.padding = "0px"
         for(i=0; i<brandA.length; i++)
             brandA[i].style.fontSize = "2.5rem"
