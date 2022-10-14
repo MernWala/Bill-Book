@@ -14,58 +14,58 @@ mainBody = "var(--dark_custom)"
 navExtentBtn.style.color = "var(--dark_custom)"
 
 window.addEventListener("load", () => {
-    if(mainBody == "var(--dark_custom)"){
-        for(let i=0; i<brandColorB.length; i++){
+    if (mainBody == "var(--dark_custom)") {
+        for (let i = 0; i < brandColorB.length; i++) {
             brandColorB[i].style.color = "var(--light)";
             navExtentBtn.style.color = "var(--light)";
         }
-        for(i=0; i<document.getElementsByTagName("h3").length; i++){
+        for (i = 0; i < document.getElementsByTagName("h3").length; i++) {
             document.getElementsByTagName("h3")[i].style.color = "var(--light)";
         }
-    }else{
-        for(let i=0; i<brandColorB.length; i++){
+    } else {
+        for (let i = 0; i < brandColorB.length; i++) {
             brandColorB[i].style.color = "var(--dark_custom)";
         }
     }
 
-    for(i=0; i<active.length; i++){
+    for (i = 0; i < active.length; i++) {
         active[i].childNodes[3].style.color = "var(--colr_1_sec)";
         active[i].childNodes[3].style.fontWeight = "800";
     }
 });
 
 navModalOpner.addEventListener('mouseover', () => {
-    navExtentBtn.style.transition="color .3s ease-in-out";
-    navExtentBtn.style.color="var(--colr_1_sec)";
+    navExtentBtn.style.transition = "color .3s ease-in-out";
+    navExtentBtn.style.color = "var(--colr_1_sec)";
     navMainContainer.style.border = "1px solid var(--colr_1_faded)";
     navMainContainer.style.transition = "border .3s ease-in-out";
 });
 
 navModalOpner.addEventListener('mouseout', () => {
-    navExtentBtn.style.transition="color .3s ease-in-out";
-    navExtentBtn.style.color="var(--light)";
+    navExtentBtn.style.transition = "color .3s ease-in-out";
+    navExtentBtn.style.color = "var(--light)";
     navMainContainer.style.border = "1px solid var(--colr_1_sec)";
     navMainContainer.style.transition = "border .3s ease-in-out";
 });
 
 window.addEventListener('scroll', () => {
-    if(scrollY > 50){
+    if (scrollY > 50) {
         nav.style.boxShadow = "0.5rem 0.5rem 1rem";
         nav.style.height = "6rem"
         logo.style.width = "7rem"
         navMainContainer.style.padding = "0px"
-        for(i=0; i<brandA.length; i++)
+        for (i = 0; i < brandA.length; i++)
             brandA[i].style.fontSize = "2.5rem"
-        for(j=0; j<brandB.length; j++)
+        for (j = 0; j < brandB.length; j++)
             brandB[j].style.fontSize = "2rem"
-    }else if(scrollY < 50){
+    } else if (scrollY < 50) {
         nav.style.boxShadow = "none";
         nav.style.height = "8rem";
         logo.style.width = "10rem"
-        for(i=0; i<brandA.length; i++)
+        for (i = 0; i < brandA.length; i++)
             brandA[i].style.fontSize = "3.5rem"
-        for(j=0; j<brandB.length; j++)
+        for (j = 0; j < brandB.length; j++)
             brandB[j].style.fontSize = "3rem"
-            navMainContainer.style.padding = ".5rem .7rem"
+        navMainContainer.style.padding = ".5rem .7rem"
     }
 });
