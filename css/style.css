@@ -486,6 +486,61 @@ li{
 }
 /* Modal desine related  End here*/
 
+/* ========== Icon Counter Starts here ========== */
+#iconCounter{
+    height: fit-content;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    margin: 5rem 0rem 0rem 0rem;
+}
+
+#iconCounter .iconCounterDynamic-closer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.iconCounterDynamic-closer .iconContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconContainer .icon i{
+    font-size: 9rem;
+    color: #ddd;
+}
+
+.iconContainer .iconDataContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconContainer .iconDataContainer .iconData,
+.iconContainer .iconDataContainer span{
+    color: var(--colr_1_sec);
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.iconDataContainer span{
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.iconContainer .iconDataContainer .iconData{
+    font-weight: lighter;
+}
+
+/* ========== Icon Counter Ends here ========== */
 
 
 

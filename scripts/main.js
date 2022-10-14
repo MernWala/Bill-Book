@@ -69,3 +69,23 @@ window.addEventListener('scroll', () => {
         navMainContainer.style.padding = ".5rem .7rem"
     }
 });
+
+
+// Icon counter method applied
+let counters = document.querySelectorAll('.iconData');
+counters.forEach((counter) => {
+    startintCount = counter.innerHTML = 0;
+    let updateCounter = () => {
+        let dataTarget = counter.getAttribute('data-target')
+        let startingCount = Number(counter.innerHTML);
+        let increment = dataTarget / 10;
+        if(startingCount < dataTarget){
+            counter.innerHTML = `${Math.round(startingCount+increment)}`
+            setTimeout(updateCounter, 60);
+        }else{
+            counter.innerHTML = dataTarget;
+        }
+    }
+    counters[2].insertAdjacentText("beforeend", "+");
+    updateCounter();
+});
