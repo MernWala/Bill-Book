@@ -220,7 +220,6 @@ li{
 #section3,
 #section4{
     height: max-content;
-    margin: 2rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +235,8 @@ li{
 }
 
 .section3-closer .header,
-.section4-closer .header{
+.section4-closer .header,
+.happyClients-closer .header{
     height: auto;
     width: 100%;
     display: flex;
@@ -244,6 +244,13 @@ li{
     justify-content: center;
     flex-direction: column;
     margin-top: 2rem;
+}
+
+.happyClients-closer .header{
+    height: 16rem;
+    width: 55%;
+    margin-right: auto;
+    margin-bottom: 2rem;
 }
 
 .section3-closer .header i,
@@ -255,8 +262,15 @@ li{
     line-height: 11rem;
 }
 
+.happyClients-closer .header i{
+    font-size: 20rem;
+    position: absolute;
+    color: #b3000036;
+}
+
 .section3-closer .header p,
-.section4-closer .header p{
+.section4-closer .header p,
+.happyClients-closer .header p{
     color: var(--colr_1_sec);
     font-size: 4rem;
     font-family: 'Poppins', sans-serif;
@@ -266,12 +280,17 @@ li{
     top: -2rem;
 }
 
+.happyClients-closer .header p{
+    top: 0!important;
+}
+
 .section4-closer .header p{
     top: -3rem;
 }
 
 .section3-closer .header p::after,
-.section4-closer .header p::after{
+.section4-closer .header p::after,
+.happyClients-closer .header p::after{
     content: "";
     width: 10rem;
     height: 4px;
@@ -492,7 +511,7 @@ li{
     display: flex;
     padding: 1rem;
     justify-content: center;
-    margin: 5rem 0rem 0rem 0rem;
+    margin: 5rem 0rem 2rem 0rem;
 }
 
 #iconCounter .iconCounterDynamic-closer{
@@ -539,8 +558,144 @@ li{
 .iconContainer .iconDataContainer .iconData{
     font-weight: lighter;
 }
-
 /* ========== Icon Counter Ends here ========== */
+
+
+/* ========== Happy Clients Starts here ========== */
+#happyClientsDynamic{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+.happyClients-closer{
+    margin: 1rem;
+    /* border: 1px solid #fff; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.__carousel-navigator-dots{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.__carousel-navigator-dots-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.__carousel-navigator-dots-ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.__navigator-dots-first{
+    height: 3px;
+    width: 3px;
+    background: var(--colr_1_sec);
+    border-radius: 50%;
+}
+
+.__navigator-dots-second{
+    height: 4px;
+    width: 4px;
+    background: var(--colr_1_sec);
+    border-radius: 50%;
+}
+
+.__navigator-dots-third{
+    height: 5px;
+    width: 5px;
+    background: var(--colr_1_sec);
+    border-radius: 50%;
+}
+/* ========== Happy Clients Ends here ========== */
+
+
+/* ========= FeedBack Card Design ========= */
+.__feedbackCardContainer{
+    height: 24rem;
+    width: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.__feedbackCardContainer .__feedbackCard-closer{
+    height: 18rem;
+    width: 80%;
+    border: 1px solid var(--colr_1_sec);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-top: auto!important;
+}
+
+.__feedbackCard-closer .__feedbackCard-img{
+    position: relative;
+    top: -5rem;
+    left: -5rem;
+    border-radius: 50%;
+    height: 11rem;
+    width: 11rem;
+}
+
+.__feedbackCard-closer .__feedbackCard-img img{
+    border-radius: 50%;
+    border: 1px solid var(--colr_1_sec);
+    padding: 0.5rem;
+    background: var(--dark_custom);
+    height: 11rem;
+}
+
+.__feedbackCard-closer .__feedbackCard-mainBody{
+    position: relative;
+    margin-top: -9rem;
+    padding: 0rem 0rem 0rem 7rem;
+    color: #fff;
+}
+
+.__feedbackCard-mainBody .__feedbackCard-header{
+
+}
+
+.__feedbackCard-header span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: var(--colr_1_sec);
+    font-weight: 850;
+}
+/* ========= FeedBack Card Design ========= */
+
+
+
+
+
+
+
+
+
+
 
 
 

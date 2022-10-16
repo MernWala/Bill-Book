@@ -53,6 +53,7 @@ window.addEventListener('scroll', () => {
         nav.style.boxShadow = "0.5rem 0.5rem 1rem";
         nav.style.height = "6rem"
         logo.style.width = "7rem"
+        navMainContainer.style.transition = "all .3s ease-in-out";
         navMainContainer.style.padding = "0px"
         for (i = 0; i < brandA.length; i++)
             brandA[i].style.fontSize = "2.5rem"
@@ -66,6 +67,7 @@ window.addEventListener('scroll', () => {
             brandA[i].style.fontSize = "3.5rem"
         for (j = 0; j < brandB.length; j++)
             brandB[j].style.fontSize = "3rem"
+            navMainContainer.style.transition = "all .3s ease-in-out";
         navMainContainer.style.padding = ".5rem .7rem"
     }
 });
@@ -79,13 +81,13 @@ counters.forEach((counter) => {
         let dataTarget = counter.getAttribute('data-target')
         let startingCount = Number(counter.innerHTML);
         let increment = dataTarget / 10;
-        if(startingCount < dataTarget){
-            counter.innerHTML = `${Math.round(startingCount+increment)}`
+        if (startingCount < dataTarget) {
+            counter.innerHTML = `${Math.round(startingCount + increment)}`
             setTimeout(updateCounter, 60);
-        }else{
+        } else
             counter.innerHTML = dataTarget;
-        }
     }
-    counters[2].insertAdjacentText("beforeend", "+");
+    counters[2].insertAdjacentText("beforeend", '+')
     updateCounter();
 });
+
