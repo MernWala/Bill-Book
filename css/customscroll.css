@@ -1,0 +1,28 @@
+/* Custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: .8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--dark_custom);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background: var(--colr_1_sec);
+    box-shadow: inset 0 0 3px rgba(0, 0, 39, .5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--colr_1_pri);
+}
+
+/* Custom selector */
+::selection{
+    background: var(--colr_1_sec);
+    color: var(--light);
+}

@@ -91,3 +91,16 @@ counters.forEach((counter) => {
     updateCounter();
 });
 
+// scroll settings
+let navlinks = document.querySelectorAll('.nav-link');
+$(navlinks[0]).click(function() {
+    $('html,body').animate({scrollTop: $("#section1").offset().top},'slow');
+});
+
+$(navlinks[1]).click(function() {
+    $('html,body').animate({scrollTop: $("#section2").offset().top},'slow');
+});
+
+$(navlinks[3]).click(function() {
+    $('html,body').animate({scrollTop: $("#section4").offset().top},'slow');
+});

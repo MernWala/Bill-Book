@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/hoverEffects.css">
+    <link rel="stylesheet" href="./css/customscroll.css">
 
     <style>
         .nav-item.active:first-child:after {
@@ -38,14 +39,14 @@
                         <h3 style="text-decoration: underline;">Navigation</h3>
                         <ul class="navbar-nav flex-row __indexModal_sub-part-1-ul pl-5">
                             <li class="nav-item active" style="">
-                                <a href="#" class="nav-link ListActive">
+                                <a class="nav-link ListActive" data-dismiss="modal">
                                     <i class="fa fa-home" aria-hidden="true"></i>
                                     <span class="listFirstLetter">H</span>ome
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a class="nav-link" data-dismiss="modal" style="color: var(--navNonActive);">
                                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                     <span class="listFirstLetter">G</span>et <span class="listFirstLetter">S</span>tart
                                 </a>
@@ -60,7 +61,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a class="nav-link" data-dismiss="modal" style="color: var(--navNonActive);">
                                     <i class="fa fa-commenting" aria-hidden="true"></i>
                                     <span class="listFirstLetter">F</span>eed<span class="listFirstLetter">B</span>ack
                                 </a>
@@ -174,7 +175,7 @@
                 <div class="navigation-logo"></div>
             </div>
             <div class="navigation-brand ml-3">
-                <p class="mt-auto mb-0"><span class="navigation-brand-A">B</span><span
+                <p class="mt-auto mb-0 cursor-default"><span class="navigation-brand-A">B</span><span
                         class="navigation-brand-B">i</span><span class="navigation-brand-A">ll</span>&nbsp;<span
                         class="navigation-brand-A">B</span><span class="navigation-brand-B">oo</span><span
                         class="navigation-brand-A">K</span></p>
@@ -3397,7 +3398,7 @@
                     </defs>
                 </svg>
 
-                <div class="section-1-mainContent_body">
+                <div class="section-1-mainContent_body cursor-default">
                     <p class="mt-auto mb-0" style="line-height: 1.8rem;">
                         <span class="navigation-brand-A_heading">B</span>
                         <span class="navigation-brand-B_heading">i</span>
@@ -3505,175 +3506,7 @@
             </div>
 
             <div id="happyClientsCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <div class="__carousel-item-closer">
-                            <div class="__feedbackCardContainer">
-                                <div class="__feedbackCard-closer">
-                                    <div class="__feedbackCard-img">
-                                        <img src="./img/logo.jpg" alt="">
-                                    </div>
-                                    <div class="__feedbackCard-mainBody">
-                                        <div class="__feedbackCard-header">
-                                            <span class="__feedbackCard-header-data">Shivam Kumar Kashyap</span>
-                                        </div>
-
-                                        <div class="__feedbackCard-data">
-                                            <i class="fa fa-quote-right" aria-hidden="true"
-                                                style="position: absolute; font-size: 4rem; color: #fff1; transform: rotateY(180deg);"></i>
-                                            <p class="mb-0"
-                                                style="padding: 0rem 2rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive; width: 90%;">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio debitis,
-                                                modi
-                                                asperiores eligendi velit quos sed? Facilis dicta totam itaque neque,
-                                                obcaecati explicabo fugit sit in?
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="__feedbackCardContainer">
-                                <div class="__feedbackCard-closer">
-                                    <div class="__feedbackCard-img">
-                                        <img src="./img/logo.jpg" alt="">
-                                    </div>
-                                    <div class="__feedbackCard-mainBody">
-                                        <div class="__feedbackCard-header">
-                                            <span class="__feedbackCard-header-data">Shivam Kumar Kashyap</span>
-                                        </div>
-
-                                        <div class="__feedbackCard-data">
-                                            <i class="fa fa-quote-right" aria-hidden="true"
-                                                style="position: absolute; font-size: 4rem; color: #fff1; transform: rotateY(180deg);"></i>
-                                            <p class="mb-0"
-                                                style="padding: 0rem 2rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive; width: 90%;">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio debitis,
-                                                modi
-                                                asperiores eligendi velit quos sed? Facilis dicta totam itaque neque,
-                                                obcaecati explicabo fugit sit in?
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="__carousel-item-closer">
-                            <div class="__feedbackCardContainer">
-                                <div class="__feedbackCard-closer">
-                                    <div class="__feedbackCard-img">
-                                        <img src="./img/logo.jpg" alt="">
-                                    </div>
-                                    <div class="__feedbackCard-mainBody">
-                                        <div class="__feedbackCard-header">
-                                            <span class="__feedbackCard-header-data">Shivam Kumar Kashyap</span>
-                                        </div>
-
-                                        <div class="__feedbackCard-data">
-                                            <i class="fa fa-quote-right" aria-hidden="true"
-                                                style="position: absolute; font-size: 4rem; color: #fff1; transform: rotateY(180deg);"></i>
-                                            <p class="mb-0"
-                                                style="padding: 0rem 2rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive; width: 90%;">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio debitis,
-                                                modi
-                                                asperiores eligendi velit quos sed? Facilis dicta totam itaque neque,
-                                                obcaecati explicabo fugit sit in?
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="__feedbackCardContainer">
-                                <div class="__feedbackCard-closer">
-                                    <div class="__feedbackCard-img">
-                                        <img src="./img/logo.jpg" alt="">
-                                    </div>
-                                    <div class="__feedbackCard-mainBody">
-                                        <div class="__feedbackCard-header">
-                                            <span class="__feedbackCard-header-data">Shivam Kumar Kashyap</span>
-                                        </div>
-
-                                        <div class="__feedbackCard-data">
-                                            <i class="fa fa-quote-right" aria-hidden="true"
-                                                style="position: absolute; font-size: 4rem; color: #fff1; transform: rotateY(180deg);"></i>
-                                            <p class="mb-0"
-                                                style="padding: 0rem 2rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive; width: 90%;">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio debitis,
-                                                modi
-                                                asperiores eligendi velit quos sed? Facilis dicta totam itaque neque,
-                                                obcaecati explicabo fugit sit in?
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="__carousel-item-closer">
-                            <div class="__feedbackCardContainer">
-                                <div class="__feedbackCard-closer">
-                                    <div class="__feedbackCard-img">
-                                        <img src="./img/logo.jpg" alt="">
-                                    </div>
-                                    <div class="__feedbackCard-mainBody">
-                                        <div class="__feedbackCard-header">
-                                            <span class="__feedbackCard-header-data">Shivam Kumar Kashyap</span>
-                                        </div>
-
-                                        <div class="__feedbackCard-data">
-                                            <i class="fa fa-quote-right" aria-hidden="true"
-                                                style="position: absolute; font-size: 4rem; color: #fff1; transform: rotateY(180deg);"></i>
-                                            <p class="mb-0"
-                                                style="padding: 0rem 2rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive; width: 90%;">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio debitis,
-                                                modi
-                                                asperiores eligendi velit quos sed? Facilis dicta totam itaque neque,
-                                                obcaecati explicabo fugit sit in?
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="__feedbackCardContainer">
-                                <div class="__feedbackCard-closer">
-                                    <div class="__feedbackCard-img">
-                                        <img src="./img/logo.jpg" alt="">
-                                    </div>
-                                    <div class="__feedbackCard-mainBody">
-                                        <div class="__feedbackCard-header">
-                                            <span class="__feedbackCard-header-data">Shivam Kumar Kashyap</span>
-                                        </div>
-
-                                        <div class="__feedbackCard-data">
-                                            <i class="fa fa-quote-right" aria-hidden="true"
-                                                style="position: absolute; font-size: 4rem; color: #fff1; transform: rotateY(180deg);"></i>
-                                            <p class="mb-0"
-                                                style="padding: 0rem 2rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive; width: 90%;">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio debitis,
-                                                modi
-                                                asperiores eligendi velit quos sed? Facilis dicta totam itaque neque,
-                                                obcaecati explicabo fugit sit in?
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                
             </div>
 
             <div class="__carousel-navigator-dots">
@@ -3747,13 +3580,13 @@
         </div>
     </section>
 
-    <section id="footer" class="footerCommonAll">
+    <section id="footer" class="footerCommonAll mt-5">
         <div class="footer-closer">
             <div class="footer-sub-part_logo mt-auto mb-auto">
                 <div class="footer-sub-part-closer_logoPart d-flex align-items-center justify-content-center">
                     <div class="logo"></div>&nbsp;&nbsp;
                     <div class="branding">
-                        <p class="mt-auto mb-0">
+                        <p class="mt-auto mb-0 cursor-default">
                             <span class="navigation-brand-A_heading">B</span>
                             <span class="navigation-brand-B_heading">i</span>
                             <span class="navigation-brand-A_heading">ll</span>
@@ -3770,13 +3603,13 @@
                     <span class="header">Navigation&nbsp;&nbsp;</span>
                     <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
                         <li class="footer-item">
-                            <a href="./index.html" class="footer-link">
+                            <a href="#section1" class="footer-link">
                                 <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
                                 Home
                             </a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">
+                            <a href="#section2" class="footer-link">
                                 <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
                                 Get Start
                             </a>
@@ -3788,7 +3621,7 @@
                             </a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">
+                            <a href="#section3" class="footer-link">
                                 <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
                                 Feedback
                             </a>

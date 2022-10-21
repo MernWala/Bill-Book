@@ -2,10 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* border: 1px solid blue; */
 }
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .__custom-body-css{
@@ -248,8 +250,7 @@ li{
 
 .happyClients-closer .header{
     height: 16rem;
-    width: 55%;
-    margin-right: auto;
+    width: 100%;
     margin-bottom: 2rem;
 }
 
@@ -401,6 +402,7 @@ li{
     letter-spacing: 1.5px;
     border-bottom: 1px solid var(--light);
     height: fit-content;
+    cursor: default;
 }
 
 .footer-sub-part-closer{
@@ -524,6 +526,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: default;
 }
 
 .iconContainer .icon i{
@@ -688,45 +691,19 @@ li{
 /* ========= FeedBack Card Design ========= */
 
 
+/* suplementry selectors  starts here*/
 
+    .error-on-dataLoad{
+        font-size: 2rem;
+        font-family: monospace;
+        color: #fff;
+    }
 
+    .cursor-pointer{
+        cursor: pointer!important;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Custom scroll bar */
-/* width */
-::-webkit-scrollbar {
-    width: .8rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: var(--dark_custom);
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    border-radius: .5rem;
-    background: var(--colr_1_sec);
-    box-shadow: inset 0 0 3px rgba(0, 0, 39, .5);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--colr_1_pri);
-}
-
-/* Custom selector */
-::selection{
-    background: var(--colr_1_sec);
-    color: var(--light);
-}
+    .cursor-default{
+        cursor: default!important;
+    }
+/* suplementry selectors  endss here*/

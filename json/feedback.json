@@ -1,30 +1,31 @@
 [
     {
-        "ImgSrc": "../img/logo.jpg",
-        "name": "demo demo demo",
+        "ImgSrc": "../feedbackUserData/user_1.jpg",
+        "name": "Vishal Ramaiya",
         "mail": "demo1234@demo.com",
         "subject": "Subject of the message",
-        "textarea": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore assumenda harum veniam dolorem accusantium fugit, quibusdam pariatur voluptatibus, porro aut reprehenderit rerum nesciunt libero, unde odit perferendis itaque maiores obcaecati?"
+        "textarea": "Data represented by message Vishal Ramaiya"
     },
     {
-        "ImgSrc": "../img/logo.jpg",
-        "name": "demo demo demo",
+        "ImgSrc": "../feedbackUserData/user_2.jpg",
+        "name": "Yash Patel",
         "mail": "demo1234@demo.com",
         "subject": "Subject of the message",
-        "textarea": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore assumenda harum veniam dolorem accusantium fugit, quibusdam pariatur voluptatibus, porro aut reprehenderit rerum nesciunt libero, unde odit perferendis itaque maiores obcaecati?"
+        "textarea": "Data represented by message Yash Patel"
     },
     {
-        "ImgSrc": "../img/logo.jpg",
-        "name": "demo demo demo",
+        "ImgSrc": "../feedbackUserData/user_3.jpg",
+        "name": "Durvesh Kolhe",
         "mail": "demo1234@demo.com",
         "subject": "Subject of the message",
-        "textarea": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore assumenda harum veniam dolorem accusantium fugit, quibusdam pariatur voluptatibus, porro aut reprehenderit rerum nesciunt libero, unde odit perferendis itaque maiores obcaecati?"
+        "textarea": "Data represented by message Durvesh kolhe"
     },
     {
-        "ImgSrc": "../img/logo.jpg",
-        "name": "demo demo demo",
+        "ImgSrc": "",
+        "name": "Aman Khumbhare",
         "mail": "demo1234@demo.com",
         "subject": "Subject of the message",
-        "textarea": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore assumenda harum veniam dolorem accusantium fugit, quibusdam pariatur voluptatibus, porro aut reprehenderit rerum nesciunt libero, unde odit perferendis itaque maiores obcaecati?"
+        "textarea": "Data represented by message Aman Khumbhe"
     }
+    
 ]
