@@ -42,10 +42,10 @@ feedbackData.addEventListener('load', function () {
                                             </div>
 
                                             <div class="__feedbackCard-data">
-                                                <i class="fa fa-quote-right" aria-hidden="true"
-                                                    style="position: absolute; font-size: 4rem; color: #fff1; transform: rotateY(180deg);"></i>
+                                                <i class="fa fa-quote-left" aria-hidden="true"
+                                                    style="position: absolute; font-size: 4rem; color: #fff1;"></i>
                                                 <p class="mb-0"
-                                                    style="padding: 0rem 2rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive; width: 90%;">
+                                                    style="padding: 1rem 5rem 0rem 5rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive;">
                                                     ${mainData[counter].textarea}
                                                 </p>
                                             </div>
@@ -64,10 +64,10 @@ feedbackData.addEventListener('load', function () {
                                                 <span class="__feedbackCard-header-data cursor-default">${mainData[counter+1].name}</span>
                                             </div>
                                             <div class="__feedbackCard-data">
-                                                <i class="fa fa-quote-right" aria-hidden="true"
-                                                    style="position: absolute; font-size: 4rem; color: #fff1; transform: rotateY(180deg);"></i>
+                                                <i class="fa fa-quote-left" aria-hidden="true"
+                                                    style="position: absolute; font-size: 4rem; color: #fff1;"></i>
                                                 <p class="mb-0"
-                                                    style="padding: 0rem 2rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive; width: 90%;">
+                                                    style="padding: 1rem 5rem 0rem 5rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive;">
                                                     ${mainData[counter+1].textarea}
                                                 </p>
                                             </div>

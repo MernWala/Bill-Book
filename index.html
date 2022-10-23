@@ -3707,7 +3707,7 @@
         </div>
         <div class="copyrightStatus">
             <div class="copyrightStatus-closer">
-                <span class="footer-PreCopyrightText">© 2022 Copyright :</span><a href="./index.html"
+                <span class="footer-PreCopyrightText cursor-default">© 2022 Copyright :</span><a href="./index.html"
                     class="ml-1">BillBook.com</a>
             </div>
         </div>
@@ -3721,16 +3721,6 @@
     <!-- custom scripts -->
     <script src="./scripts/main.js"></script>
     <script src="./scripts/json_settings.js"></script>
-
-    <script>
-        // dynamic feedback
-        const feedback = new XMLHttpRequest();
-        feedback.open('GET', '../json/feedback.json');
-        feedback.send();
-        feedback.addEventListener('load', function () {
-            const totalFedback = JSON.parse(this.responseText);
-        })
-    </script>
 </body>
 
 </html>

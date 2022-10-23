@@ -246,6 +246,7 @@ li{
     justify-content: center;
     flex-direction: column;
     margin-top: 2rem;
+    cursor: default;
 }
 
 .happyClients-closer .header{
@@ -674,10 +675,6 @@ li{
     margin-top: -9rem;
     padding: 0rem 0rem 0rem 7rem;
     color: #fff;
-}
-
-.__feedbackCard-mainBody .__feedbackCard-header{
-
 }
 
 .__feedbackCard-header span{
