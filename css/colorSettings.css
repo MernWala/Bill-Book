@@ -2,22 +2,31 @@
     /* Dark And Light Theam */
     --light : #f1f2e1;
     --dark_custom : #181818;
+
+    /* logo colr --> never change constant always */
+    --logoColor: #b30000;
+    --logoColor_faded : #f2bbbb;
+    --logoColor_dark: #6f0202;
     
     /* color set -> 1 */
     --colr_1_pri : #6f0202;
     --colr_1_sec : #b30000;
     --colr_1_faded : #f2bbbb;
-    
+    --colr_1_ultraLight: #b3000036;
+
     /* color set -> 2 */
     --colr_2_pri : #0300b4;
     --colr_2_sec : #0052ef;
+    --colr_2_faded : #85a9eb;
+    --colr_2_ultraLight: #0052ef36;
     
     /* color set -> 3 */
-    --colr_3_pri : #365f07;
-    --colr_3_sec : #69923c;
+    --colr_3_pri : #217344;
+    --colr_3_sec : #2e8b57;
+    --colr_3_faded : #99e9bc;
+    --colr_3_ultraLight : #2e8b5736;
 
+    /* link Color */
     --navNonActive : #f1f2e18d;
     --navActive : #f1f2e1;
-
-    --modal_hr-light : #f1f2e196;
 }

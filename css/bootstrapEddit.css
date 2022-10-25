@@ -90,7 +90,8 @@ form .form-row .form-group input:focus,
 form .form-row .form-group textarea:focus{
     border-color: var(--colr_1_faded);
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(179 0 0 / 25%);
+    /* box-shadow: 0 0 0 0.2rem rgb(179 0 0 / 25%); */
+    box-shadow: 0 0 0 0.005rem var(--colr_1_faded);
 }
 
 .carousel-item .__carousel-item-closer{

@@ -63,7 +63,7 @@ html{
 .navigation-brand-A,
 .navigation-brand-B{
     font-size: 3.5rem;
-    color: var(--colr_1_sec);
+    color: var(--logoColor);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     transition: all .2s ease-in;    
@@ -78,7 +78,7 @@ html{
     margin-left: auto;
     padding: .5rem .7rem;
     border-radius: 3px;
-    box-shadow: 1px 1px 2px var(--colr_1_pri), -1px -1px 2px var(--colr_1_pri);
+    box-shadow: 1px 1px 2px var(--logoColor), -1px -1px 2px var(--logoColor);
     transition: all .3s ease-in;
 }
 
@@ -155,6 +155,7 @@ li{
     color: var(--colr_1_sec);
     font-family: 'Poppins', sans-serif;
     font-weight: 550;
+    transition: all .3s ease-in;
 }
 
 .navigation-brand-B_heading{
@@ -165,6 +166,7 @@ li{
 .navigation-brand-A_body,
 .navigation-brand-B_body{
     font-size: 2.5rem;
+    transition: all .3s ease-in;
 }
 
 .navigation-brand-A_body{
@@ -215,9 +217,6 @@ li{
 }
 /* ============== section 2 Ends Here ============== */
 
-
-
-
 /* ============== section 3, 4 Starts Here ============== */
 #section3,
 #section4{
@@ -258,7 +257,7 @@ li{
 .section3-closer .header i,
 .section4-closer .header i{
     font-size: 15rem;
-    background-image: linear-gradient(to bottom, #b30000, #5A0000, #5A0000, #181818, #1818183b);
+    /* background-image: linear-gradient(to bottom, #b30000, #5A0000, #5A0000, #181818, #1818183b); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 11rem;
@@ -267,7 +266,7 @@ li{
 .happyClients-closer .header i{
     font-size: 20rem;
     position: absolute;
-    color: #b3000036;
+    color: var(--colr_1_ultraLight);
 }
 
 .section3-closer .header p,
@@ -337,7 +336,7 @@ li{
 .footer-closer{
     width: 100%;
     height: 100%;
-    background-color: #6f02024f;
+    background-color: var(--colr_1_ultraLight);
     color: var(--light);
     padding: 1rem;
     display: flex;
@@ -360,7 +359,7 @@ li{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     padding: 2rem;
 }
 
@@ -461,10 +460,6 @@ li{
     border-bottom: none;
     margin-top: 0.5rem;
     color: var(--navNonActive);  /* color will change dynamically when hit login */
-}
-
-.__modal-hr{
-    background: var(--modal_hr-light);
 }
 
 .__indexModal_sub-part-2{
@@ -689,7 +684,6 @@ li{
 
 
 /* suplementry selectors  starts here*/
-
     .error-on-dataLoad{
         font-size: 2rem;
         font-family: monospace;
@@ -704,3 +698,136 @@ li{
         cursor: default!important;
     }
 /* suplementry selectors  endss here*/
+
+/* ========== Scroll to Top Start ========== */
+#ScrollToTop_Button{
+    position: fixed;
+    border: 1px solid var(--colr_1_sec);
+    border-bottom: 0px;
+    height: 3rem;
+    width: 3rem;
+    bottom: 0px;
+    margin-left: calc(50% - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    background-color: #fff1;
+    box-shadow: 0px 0px 3px 1.5px black;
+    transition: all .2s ease-in;
+    display: none;
+}
+
+.scrollToTop .scrollToTop-closer{
+    color: var(--colr_1_sec);
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+    display: none;
+}
+
+.scrollToTop i{
+    color: var(--light);
+    transition: all .2s ease-in;
+    display: none;
+}
+/* ========== Scroll to Top Ends =========== */
+
+/* ======= color Settings box starts here ======= */
+#colorSettingsButton{
+    position: fixed;
+    top: 15vh;
+    left: calc(4.5rem - 20rem);
+    height: 5rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 5px 1px black;
+    background-color: #fff1;
+    transition: left .3s ease-in-out;
+}
+
+.fa-cog{
+    transition: all .3s ease-in;
+}
+
+#colorSettingsButton .color-settings-closer{
+    position: relative;
+    height: calc(100% - 5px);
+    width: calc(100% - 5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color-settings-closer .clrController{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-settings-closer .clrController-closer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.clrController-closer .left,
+.clrController-closer .right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.clrController-closer .left i,
+.clrController-closer .right i{
+    color: var(--colr_1_faded);
+    font-size: 1.3rem;
+}
+
+.color-settings-closer .clrBox{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.clrBox .clrOption{
+    position: relative;
+    height: 2rem;
+    width: 3rem;
+    border-radius: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.clrBox .clrOption:nth-child(1){
+    border: 1px solid #b30000;
+}
+
+.clrBox .clrOption:nth-child(2){
+    border: 1px solid #0052ef;
+}
+
+.clrBox .clrOption:nth-child(3){
+    border: 1px solid #2e8b57;
+}
+/* ======= color Settings box ends here ======= */

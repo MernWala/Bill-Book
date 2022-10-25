@@ -4,7 +4,7 @@
 .nav-link i,
 .nav-link .nav-link::after,
 li::after{
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in;
 }
 
 /* Section -1 Hover effect */
@@ -42,4 +42,14 @@ li:hover::after{
     margin-right: .5rem;
     transition: margin .3s ease-in, font .2s ease-in-out;
     font-size: 1.7rem;
+}
+
+#colorSettingsButton:hover{
+    left: 0px;
+    transition: left .3s ease-in-out;
+}
+
+.clrBox .clrOption:hover{
+    box-shadow: -2px 2px 3px black;
+    top: -2px;
 }
