@@ -1,3 +1,4 @@
+// Index page manipulation starts here
 const unknownProfile = "../img/unknown.jpg"
 // Developer vision Section index.html
 let developerVision = document.querySelector('.section3-body').childNodes[1];
@@ -16,7 +17,6 @@ indexData.addEventListener('load', function () {
 });
 
 // Precious feedback data section
-let feedbackContainer = document.querySelector('#happyClientsCarousel');
 const carouselContainer = document.getElementById('happyClientsCarousel');
 const feedbackData = new XMLHttpRequest();
 feedbackData.open('GET', '../json/feedback.json');
@@ -24,11 +24,12 @@ feedbackData.send();
 feedbackData.addEventListener('load', function () {
     let mainData = JSON.parse(this.responseText);
     const carsoulInner = document.createElement('div');
-    carsoulInner.classList.add('carousel-inner')
+    carsoulInner.classList.add('carousel-inner');
     let counter = 0;
-    for(i=0; i<mainData.length/2; i++){
+
+    for (i = 0; i < Math.floor(mainData.length / 2); i++) {
         let img1 = mainData[counter].ImgSrc == "" ? unknownProfile : mainData[counter].ImgSrc;
-        let img2 = mainData[counter+1].ImgSrc == "" ? unknownProfile : mainData[counter+1].ImgSrc;
+        let img2 = mainData[counter + 1].ImgSrc == "" ? unknownProfile : mainData[counter + 1].ImgSrc;
         let htmlData = `<div class="carousel-item">
                             <div class="__carousel-item-closer">
                                 <div class="__feedbackCardContainer">
@@ -61,14 +62,14 @@ feedbackData.addEventListener('load', function () {
                                         </div>
                                         <div class="__feedbackCard-mainBody">
                                             <div class="__feedbackCard-header">
-                                                <span class="__feedbackCard-header-data cursor-default">${mainData[counter+1].name}</span>
+                                                <span class="__feedbackCard-header-data cursor-default">${mainData[counter + 1].name}</span>
                                             </div>
                                             <div class="__feedbackCard-data">
                                                 <i class="fa fa-quote-left" aria-hidden="true"
                                                     style="position: absolute; font-size: 4rem; color: #fff1;"></i>
                                                 <p class="mb-0"
                                                     style="padding: 1rem 5rem 0rem 5rem; font-size: 1.3rem; font-family: 'Baloo Bhai 2', cursive;">
-                                                    ${mainData[counter+1].textarea}
+                                                    ${mainData[counter + 1].textarea}
                                                 </p>
                                             </div>
                                         </div>
@@ -76,9 +77,9 @@ feedbackData.addEventListener('load', function () {
                                 </div>
                             </div>
                         </div>`
-        counter+=2;
+        counter += 2;
         carsoulInner.insertAdjacentHTML('afterbegin', htmlData);
         carouselContainer.appendChild(carsoulInner);
     }
-    carsoulInner.firstChild.classList.add('active')
-})
+    carsoulInner.firstChild.classList.add('active');
+});

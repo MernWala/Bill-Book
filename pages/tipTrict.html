@@ -26,6 +26,44 @@
 </head>
 
 <body class="__custom-body-css">
+    <!-- scroll to top feature -->
+    <div class="scrollToTop" id="ScrollToTop_Button">
+        <div class="scrollToTop-closer">
+            <a href="#">
+                <i class="fa fa-caret-up" id="backToTo_icon" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- color Settings -->
+    <div class="colorSettings" id="colorSettingsButton">
+        <div class="color-settings-closer">
+
+            <div class="clrBox">
+                <div id="colorOption1" class="clrOption"></div>
+                <div id="colorOption2" class="clrOption"></div>
+                <div id="colorOption3" class="clrOption"></div>
+            </div>
+
+            <div class="clrController">
+                <div class="clrController-closer">
+                    <div class="left order-sm-second" style="width: 1rem;">
+                        <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="right order-sm-first">
+                        <div class="up">
+                            <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>
+                        </div>
+                        <div class="down">
+                            <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!-- bootstrap modals -->
     <div id="navigation-main-data" class="modal fade" role="dialog">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="content" id="navModal">
@@ -38,7 +76,7 @@
                     <div class="__indexModal_sub-part-1">
                         <h3 style="text-decoration: underline;">Navigation</h3>
                         <ul class="navbar-nav flex-row __indexModal_sub-part-1-ul pl-5">
-                            
+
                             <li class="nav-item">
                                 <a href="../index.html" class="nav-link" style="color: var(--navNonActive);">
                                     <i class="fa fa-home" aria-hidden="true"></i>
@@ -189,6 +227,10 @@
             </a>
         </div>
     </div>
+
+    <div class="container mx-0 maxWidth-100 mt-4">
+        <div class="row row-content px-3 py-3 justify-content-center" id="tipTricsContainer"></div>
+    </div>
     
     <section id="footer" class="footerCommonAll mt-5">
         <div class="footer-closer">
@@ -208,110 +250,112 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-sub-part">
-                <div class="footer-sub-part-closer">
-                    <span class="header">Navigation&nbsp;&nbsp;</span>
-                    <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
-                        <li class="footer-item">
-                            <a href="../index.html" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="../index.html#section2" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Get Start
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Tips & Trick
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="../index.html#section4" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Feedback
-                            </a>
-                        </li>
-                    </ul>
+            <div class="d-flex flex-wrap" style="height: fit-content;">
+                <div class="footer-sub-part">
+                    <div class="footer-sub-part-closer">
+                        <span class="header">Navigation&nbsp;&nbsp;</span>
+                        <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
+                            <li class="footer-item">
+                                <a href="../index.html" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../index.html#section2" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Get Start
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Tips & Trick
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../index.html#section4" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Feedback
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-sub-part">
-                <div class="footer-sub-part-closer">
-                    <span class="header">Receipt Navs&nbsp;&nbsp;</span>
-                    <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Create New
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Dissmiss Bill
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Past Record
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer-sub-part">
+                    <div class="footer-sub-part-closer">
+                        <span class="header">Receipt Navs&nbsp;&nbsp;</span>
+                        <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Create New
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Dissmiss Bill
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Past Record
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-sub-part">
-                <div class="footer-sub-part-closer">
-                    <span class="header">Customers&nbsp;&nbsp;</span>
-                    <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
-                        <li class="footer-item">
-                            <a href="./index.html" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Record
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Manage
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Credit Record
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer-sub-part">
+                    <div class="footer-sub-part-closer">
+                        <span class="header">Customers&nbsp;&nbsp;</span>
+                        <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
+                            <li class="footer-item">
+                                <a href="./index.html" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Record
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Manage
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Credit Record
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-sub-part">
-                <div class="footer-sub-part-closer">
-                    <span class="header">Admin Section&nbsp;&nbsp;</span>
-                    <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
-                        <li class="footer-item">
-                            <a href="./index.html" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Stock
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Product Graph
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">
-                                <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
-                                Snippets
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer-sub-part">
+                    <div class="footer-sub-part-closer">
+                        <span class="header">Admin Section&nbsp;&nbsp;</span>
+                        <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
+                            <li class="footer-item">
+                                <a href="./index.html" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Stock
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Product Graph
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Snippets
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -330,7 +374,8 @@
 
     <!-- custom scripts -->
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/json_settings.js"></script>
+    <script src="../scripts/color_settings.js"></script>
+    <script src="../scripts/json_settings_tips.js"></script>
 </body>
 
 </html>

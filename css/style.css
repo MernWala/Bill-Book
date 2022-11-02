@@ -190,6 +190,7 @@ li{
     margin: 0.5rem 0rem;
     font-size: calc(100% + .3rem);
     font-weight: lighter;
+    transition: all .3s ease-in;
 }
 
 .login_signup_btn-container .nav-link{
@@ -343,6 +344,7 @@ li{
     align-items: initial;
     justify-content: space-evenly;
     padding: 2rem 0rem;
+    flex-wrap: wrap;
 }
 
 .copyrightStatus{
@@ -380,7 +382,9 @@ li{
 
 .footer-sub-part-closer_logoPart{
     height: 7rem;
+    min-width: 35rem;
 }
+
 
 .footer-sub-part-closer_logoPart .logo{
     height: 100%;
@@ -741,7 +745,7 @@ li{
 /* ======= color Settings box starts here ======= */
 #colorSettingsButton{
     position: fixed;
-    top: 15vh;
+    top: 15rem;
     left: calc(4.5rem - 20rem);
     height: 5rem;
     width: 20rem;

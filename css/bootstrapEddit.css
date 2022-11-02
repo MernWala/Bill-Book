@@ -98,6 +98,68 @@ form .form-row .form-group textarea:focus{
     display: flex;
 }
 
+.nav-link{
+    transition: all .3s ease-in;
+}
+
 .nav-link:hover{
     cursor: pointer;
+}
+
+.height-100rem_width95{
+    height: 100rem;
+    max-width: 95%!important;
+}
+
+.maxWidth-100{
+    max-width: 100%!important;
+}
+
+.maxWidth-95{
+    max-width: 95%!important;
+}
+
+.maxWidth-50{
+    max-width: 50%;
+}
+
+.nav-tabs .nav-item::after{
+    display: none;
+}
+
+.nav-tabs{
+    border-color: var(--colr_1_faded)!important;
+}
+
+.nav-tabs .nav-item a{
+    font-size: 1.5rem;
+    color: var(--colr_1_sec);
+    font-weight: 650;
+    letter-spacing: 1px;
+    border-bottom: 0px;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover{
+    border-color: var(--colr_1_faded)!important;
+}
+
+.nav-tabs .nav-item:focus-visible{
+    border-color: var(--colr_1_sec)!important;
+}
+
+.nav-tabs .nav-link.active{
+    background-color: var(--colr_1_faded)!important;
+    border-color: var(--colr_1_sec)!important;
+}
+
+.tab-content{
+    box-shadow: 0px 5px 10px var(--colr_1_ultraLight);
+}
+
+.tab-content .tab-pane{
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: 1px;
+    font-style: italic;
 }
