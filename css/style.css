@@ -13,9 +13,6 @@ html{
 .__custom-body-css{
     background-color: var(--dark_custom)!important;
     padding-top: 8rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .navigation{
@@ -42,6 +39,7 @@ html{
     position: relative;
     height: calc(100% - .5rem);
     width: 10rem;
+    transition: all .25s ease-in;
 }
 
 .navigation-logo{
@@ -49,13 +47,13 @@ html{
     background-size: cover;
     height: 100%;
     width: 100%;
-    transition: all .2s ease-in;
+    transition: all .3s ease-in;
 }
 
 .navigation-brand{
     position: relative;
     height: calc(100% - .5rem);
-    width: calc(100% - 7rem);
+    /* width: calc(100% - 7rem); */
     display: flex;
     align-items: center;
 }
@@ -94,11 +92,12 @@ section{
 
 /* Section - 1 starts here */
 #section1{
-    height: calc(100vh - 8rem);
+    height: fit-content;
     background-image: url('../img/Section_1_Background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    margin-bottom: 3rem;
 }
 
 .section1-closer{
@@ -210,11 +209,8 @@ li{
 
 /* ============== section 2 Start Here ============== */
 #section2{
-    height: calc(100vh - 6rem);
+    height: fit-content;
     border: 1px solid #fff;
-}
-.section2-closer{
-
 }
 /* ============== section 2 Ends Here ============== */
 
@@ -262,12 +258,14 @@ li{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 11rem;
+    transition: all .3s ease-in;
 }
 
 .happyClients-closer .header i{
     font-size: 20rem;
     position: absolute;
     color: var(--colr_1_ultraLight);
+    transition: all .3s ease-in;
 }
 
 .section3-closer .header p,
@@ -280,6 +278,7 @@ li{
     line-height: 0rem;
     position: relative;
     top: -2rem;
+    transition: all .3s ease-in;
 }
 
 .happyClients-closer .header p{
@@ -301,6 +300,7 @@ li{
     border-radius: 1rem;
     right: 0px;
     bottom: -2.8rem;
+    transition: all .3s ease-in;
 }
 
 .section3-closer .section3-body{
@@ -338,6 +338,7 @@ li{
     width: 100%;
     height: 100%;
     background-color: var(--colr_1_ultraLight);
+    transition: all .3s ease-in;
     color: var(--light);
     padding: 1rem;
     display: flex;
@@ -357,6 +358,7 @@ li{
 
 .copyrightStatus .copyrightStatus-closer{
     background-color: var(--colr_1_pri);
+    transition: all .3s ease-in;
     height: 100%;
     width: 100%;
     display: flex;
@@ -527,6 +529,7 @@ li{
     flex-direction: column;
     align-items: center;
     cursor: default;
+    margin: 2rem;
 }
 
 .iconContainer .icon i{

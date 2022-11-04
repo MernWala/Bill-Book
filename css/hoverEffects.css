@@ -16,7 +16,7 @@ li::after{
 .login_signup_btn-container a:hover,
 .nav-link:hover i{
     color: var(--colr_1_sec);
-    transition: color .3s ease-in-out;
+    transition: color .3s ease-in;
 }
 
 .login_signup_btn-container a:hover{
@@ -34,19 +34,19 @@ li:hover::after{
 
 .footer-closer a:hover{
     color: var(--light)!important;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in;
     text-decoration: none;
 }
 
 .footer-closer a:hover .footer-itemIcon{
     margin-right: .5rem;
-    transition: margin .3s ease-in, font .2s ease-in-out;
+    transition: margin .3s ease-in, font .2s ease-in;
     font-size: 1.7rem;
 }
 
 #colorSettingsButton:hover{
     left: 0px;
-    transition: left .3s ease-in-out;
+    transition: left .3s ease-in;
 }
 
 .clrBox .clrOption:hover{

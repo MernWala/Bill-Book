@@ -12,13 +12,15 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     border-radius: .5rem;
-    background: var(--logoColor);
+    /* background: var(--logoColor); */
+    background: var(--colr_1_sec);
     box-shadow: inset 0 0 3px rgba(0, 0, 39, .5);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--logoColor_dark);
+    /* background: var(--logoColor_dark); */
+    background: var(--colr_1_pri);
 }
 
 /* Custom selector */
