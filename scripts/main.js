@@ -110,3 +110,16 @@ $(navlinks[1]).on("click", function () {
 $(navlinks[3]).on("click", function () {
   $("html,body").animate({ scrollTop: $("#section4").offset().top }, "slow");
 });
+
+// login modal eye manipulation
+let loginEye = document.querySelector('#loginEye');
+let loginModalPassword = document.querySelector('#loginPassword');
+
+loginEye.addEventListener('click', () => {
+  loginEye.classList.toggle('fa-eye');
+  loginEye.classList.toggle('fa-eye-slash');
+  if(loginModalPassword.type === 'password')
+    loginModalPassword.type = 'text';
+  else
+    loginModalPassword.type = 'password';
+});

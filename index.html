@@ -38,13 +38,11 @@
     <!-- color Settings -->
     <div class="colorSettings" id="colorSettingsButton">
         <div class="color-settings-closer">
-
             <div class="clrBox">
                 <div id="colorOption1" class="clrOption"></div>
                 <div id="colorOption2" class="clrOption"></div>
                 <div id="colorOption3" class="clrOption"></div>
             </div>
-
             <div class="clrController">
                 <div class="clrController-closer">
                     <div class="left order-sm-second" style="width: 1rem;">
@@ -60,7 +58,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -201,6 +198,88 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered __loginmModal-XLG" role="content" id="loginModal">
+            <div class="modal-content">
+                <div class="__customLoginModal-closer">
+                    <div class="__loginModal-left d-flex align-items-center justify-content-center">    
+                        <div class="__loginModal-left-closer">
+                            <div class="__designPart"></div>
+                            <div class="__dataPart">
+                                <div class="branding">
+                                    <p class="mt-auto mb-0 cursor-default">
+                                        <span class="navigation-brand-A_heading">B</span>
+                                        <span class="navigation-brand-B_heading">i</span>
+                                        <span class="navigation-brand-A_heading">ll</span>
+                                        &nbsp;
+                                        <span class="navigation-brand-A_heading">B</span>
+                                        <span class="navigation-brand-B_heading">oo</span>
+                                        <span class="navigation-brand-A_heading">K</span>
+                                    </p>
+                                </div>
+                                <div class="__subTitle">
+                                    <p>Easy Plateform For Genrating All Purpose Receipt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__loginModal-right d-flex align-items-center">
+                        <div class="__loginModal-right-closer">
+                            <form action="" method="post">
+                                <div class="__part-1 row">
+                                    <h3>
+                                        <span class="listFirstLetter" style="color: var(--colr_1_sec); font-weight: 500;">L</span>ogin
+                                    </h3>
+                                </div>
+                                <div class="__formDesin">
+                                    <div class="__input-group">
+                                        <input type="text" class="form-control" placeholder="Login ID">
+                                    </div>
+                                    <div class="__input-group">
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                                        <i class="fa fa-eye-slash" id="loginEye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="__forgot-passowrd-panel">
+                                        <a href="#">Forgot Password ?</a>
+                                    </div>
+                                    <div class="__input-group">
+                                        <input type="checkbox" id="remember" name="" value="rememberMe">
+                                        <label for="remember">Remember Me</label>
+                                    </div>
+                                    <div class="__input-group d-flex align-items-center">
+                                        <input type="submit" value="Login">
+                                        <div class="__login-refer ml-3">
+                                            <span>New User?&nbsp;<a href="./pages/signup.html">Sign Up</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-part">
+                                        <div class="__login-modal-bottom-heading">
+                                            <span>Or Login With</span>
+                                            <p></p>
+                                        </div>
+                                        <div class="__bottom-block-btn">
+                                            <button class="btn-google">
+                                                <i class="fa fa-google-plus" aria-hidden="true"></i> <p>&nbsp;</p> <span>Google</span>
+                                            </button>
+
+                                            <button class="btn-facebook">
+                                                <i class="fa fa-facebook-official" aria-hidden="true"></i> <p>&nbsp;</p> <span>Facebook</span>
+                                            </button>
+                                            
+                                            <button class="btn-github">
+                                                <i class="fa fa-github" aria-hidden="true"></i> <p>&nbsp;</p> <span>Github</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -3460,9 +3539,9 @@
                     <p class="navigation-brand-B_body mb-0" style="font-size: 1.8rem; font-weight: lighter;">Your
                         document will always saved to your Account</p>
                     <div class="login_signup_btn-container d-flex">
-                        <a href="#" class="nav-link">Login</a>
+                        <a data-toggle="modal" data-target="#loginModal" class="btn nav-link loginModalBtn">Login</a>
                         <p class="mb-0">&nbsp;</p>
-                        <a href="#" class="nav-link">Sign Up</a>
+                        <a href="./pages/signup.html" target="_blank" class="nav-link">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -3472,7 +3551,6 @@
     <section id="section2" class="secondSection">
         <!-- Slider section starts here -->
         <div class="section2-closer">
-
         </div>
     </section>
 

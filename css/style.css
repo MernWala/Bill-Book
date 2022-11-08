@@ -507,6 +507,10 @@ li{
     color: #fff;
     font-size: 2.3rem;
 }
+
+.loginModalBtn{
+    color: var(--light)!important;
+}
 /* Modal desine related  End here*/
 
 /* ========== Icon Counter Starts here ========== */

@@ -1,82 +1,86 @@
-.modal-title{
+.modal-title {
     font-size: calc(100% + 1rem);
 }
 
-.modal-header .close{
+.modal-body {
+    color: var(--light);
+}
+
+.modal-header .close {
     font-size: calc(100% + 2rem);
 }
 
-#navigation-main-data .modal-lg{
+#navigation-main-data .modal-lg {
     min-width: 90vw;
 }
 
-#navModal{
+#navModal {
     align-items: center;
 }
 
-#navModal .modal-content{
+.modal-content {
     border-radius: 0px;
     border: 1px solid var(--colr_1_pri);
 }
 
-#navModal .modal-content .modal-body{
+.modal-content .modal-body {
     background-color: var(--dark_custom);
     padding: 2rem;
 }
 
-#navModal .modal-content .modal-header{
+.modal-content .modal-header {
     padding: .4rem 1rem;
     border-radius: 0px;
     background-color: var(--colr_1_pri);
 }
 
-#navModal .modal-content .modal-header h4,
-#navModal .modal-content .modal-header button{
+.modal-content .modal-header h4,
+.modal-content .modal-header button {
     color: floralwhite;
     opacity: 1;
 }
 
-#navModal .modal-content .modal-header button{
+.modal-content .modal-header button {
     padding: 0px;
     margin: 0px;
     margin-left: auto;
-    margin-bottom: .5rem!important;
+    margin-bottom: .5rem !important;
 }
 
-.close:focus{
+.close:focus {
     outline: 0px;
 }
 
-.modal-body .__indexModal_sub-part-1{
+.modal-body .__indexModal_sub-part-1 {
     margin-bottom: 3rem;
 }
 
-.modal{
+.modal {
     backdrop-filter: blur(5px);
 }
 
-.nav-item{
+.nav-item {
     min-width: fit-content;
 }
 
-.modal-lg{
-    min-width: fit-content!important;
+.modal-lg {
+    min-width: fit-content !important;
 }
 
-.modal-content{
-    height: fit-content!important;
+.modal-content {
+    height: fit-content !important;
 }
 
-.modal-header{
-    border-bottom: 0!important;
+.modal-header {
+    border-bottom: 0 !important;
 }
 
-form .form-row .form-group{
+form .form-row .form-group {
     width: 48%;
 }
 
 form .form-row .form-group input,
-form .form-row .form-group textarea{
+form .form-row .form-group textarea {
     font-size: 1.5rem;
     background: none;
     color: var(--light);
@@ -87,51 +91,51 @@ form .form-row .form-group textarea{
 }
 
 form .form-row .form-group input:focus,
-form .form-row .form-group textarea:focus{
+form .form-row .form-group textarea:focus {
     border-color: var(--colr_1_faded);
     outline: 0;
     /* box-shadow: 0 0 0 0.2rem rgb(179 0 0 / 25%); */
     box-shadow: 0 0 0 0.005rem var(--colr_1_faded);
 }
 
-.carousel-item .__carousel-item-closer{
+.carousel-item .__carousel-item-closer {
     display: flex;
 }
 
-.nav-link{
+.nav-link {
     transition: all .3s ease-in;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     cursor: pointer;
 }
 
-.height-100rem_width95{
+.height-100rem_width95 {
     height: 100rem;
-    max-width: 95%!important;
+    max-width: 95% !important;
 }
 
-.maxWidth-100{
-    max-width: 100%!important;
+.maxWidth-100 {
+    max-width: 100% !important;
 }
 
-.maxWidth-95{
-    max-width: 95%!important;
+.maxWidth-95 {
+    max-width: 95% !important;
 }
 
-.maxWidth-50{
+.maxWidth-50 {
     max-width: 50%;
 }
 
-.nav-tabs .nav-item::after{
+.nav-tabs .nav-item::after {
     display: none;
 }
 
-.nav-tabs{
-    border-color: var(--colr_1_faded)!important;
+.nav-tabs {
+    border-color: var(--colr_1_faded) !important;
 }
 
-.nav-tabs .nav-item a{
+.nav-tabs .nav-item a {
     font-size: 1.5rem;
     color: var(--colr_1_sec);
     font-weight: 650;
@@ -140,26 +144,256 @@ form .form-row .form-group textarea:focus{
 }
 
 .nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover{
-    border-color: var(--colr_1_faded)!important;
+.nav-tabs .nav-link:hover {
+    border-color: var(--colr_1_faded) !important;
 }
 
-.nav-tabs .nav-item:focus-visible{
-    border-color: var(--colr_1_sec)!important;
+.nav-tabs .nav-item:focus-visible {
+    border-color: var(--colr_1_sec) !important;
 }
 
-.nav-tabs .nav-link.active{
-    background-color: var(--colr_1_faded)!important;
-    border-color: var(--colr_1_sec)!important;
+.nav-tabs .nav-link.active {
+    background-color: var(--colr_1_faded) !important;
+    border-color: var(--colr_1_sec) !important;
 }
 
-.tab-content{
+.tab-content {
     box-shadow: 0px 5px 10px var(--colr_1_ultraLight);
 }
 
-.tab-content .tab-pane{
+.tab-content .tab-pane {
     font-size: 1.4rem;
     color: #fff;
     letter-spacing: 1px;
     font-style: italic;
 }
+
+/* ===== Login Modal design Starts here ===== */
+.__loginmModal-XLG {
+    min-width: 75vw !important;
+    border: 1px solid #fff;
+}
+
+.__loginmModal-XLG .modal-content {
+    background: var(--dark_custom);
+    height: calc(100vh - 4rem) !important;
+}
+
+.modal-content .__customLoginModal-closer {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.__loginModal-left-closer .__designPart {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center initial;
+}
+
+.__dataPart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.__dataPart .branding p {
+    line-height: normal;
+    width: fit-content;
+}
+
+.__dataPart .__subTitle {
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    width: 60%;
+    margin-left: -6rem;
+}
+
+.__customLoginModal-closer .__loginModal-left {
+    width: 25vw;
+    height: calc(100vh - 5rem);
+}
+
+.__loginModal-left .__loginModal-left-closer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.__customLoginModal-closer .__loginModal-right {
+    min-width: 50vw;
+    padding: 0rem 5rem;
+    min-height: calc(100% - 1rem);
+    background-color: var(--formRightShade);
+}
+
+.__loginModal-right-closer {
+    width: 100%;
+    height: 80vh;
+}
+
+.__loginModal-right-closer .__part-1 {
+    margin: 1rem 0rem 2rem 0rem
+}
+
+.__loginModal-right-closer .__part-1::after {
+    content: "";
+    position: relative;
+    height: .3rem;
+    width: 2.3rem;
+    background-color: var(--colr_1_sec);
+    top: calc(4rem - 3px);
+    left: -2.3rem;
+}
+
+.__loginModal-right-closer .__part-1 h3 {
+    color: var(--light);
+    font-size: 3rem;
+    font-weight: 450;
+}
+
+.__formDesin {
+    height: 70vh;
+}
+
+.__formDesin .__input-group {
+    margin-bottom: 1rem;
+}
+
+.__input-group input {
+    font-size: 1.5rem;
+    background: none;
+    color: var(--light);
+    border: 1px solid var(--colr_1_sec);
+    font-weight: 450;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: var(--colr_1_faded);
+}
+
+.__input-group input[type=text]:focus,
+.__input-group input[type=password]:focus {
+    border-color: var(--colr_1_faded);
+    color: var(--light);
+    outline: 0;
+    box-shadow: 0 0 0 0.005rem var(--colr_1_faded);
+    background: rgba(0, 0, 0, .1);
+}
+
+.__input-group i {
+    position: absolute;
+    margin-top: -2.6rem;
+    right: 0px;
+    margin-right: 8rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.__forgot-passowrd-panel {
+    float: right;
+    font-size: 1.3rem;
+}
+
+.__forgot-passowrd-panel a {
+    color: var(--colr_1_sec);
+    text-decoration: underline;
+    transition: all .2s ease-in;
+}
+
+.__forgot-passowrd-panel a:hover {
+    color: var(--colr_1_pri);
+    transition: all .2s ease-in;
+}
+
+.__input-group input[type='checked']:checked {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.__input-group label {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    color: var(--colr_1_sec);
+}
+
+.__input-group input[type='submit'] {
+    padding: 0.2rem 1.5rem;
+    background: var(--colr_1_sec);
+    color: var(--light);
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.__input-group .__login-refer span {
+    color: var(--light);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.__input-group .__login-refer span a {
+    text-decoration: underline;
+    color: var(--colr_1_sec);
+}
+
+.__loginModal-right-closer .bottom-part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.bottom-part .__login-modal-bottom-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.bottom-part .__login-modal-bottom-heading p {
+    position: relative;
+    height: 1px;
+    background-color: var(--colr_1_sec);
+    top: -1rem;
+    width: 30rem;
+}
+
+.bottom-part .__login-modal-bottom-heading span {
+    color: var(--colr_1_sec);
+    font-size: 1.5rem;
+    z-index: 999 !important;
+    background: var(--formRightShade) !important;
+    padding: 0rem 1rem;
+}
+
+.__bottom-block-btn {
+    display: flex;
+}
+
+.__bottom-block-btn button {
+    margin: 0rem 1rem;
+    min-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+}
+
+.__bottom-block-btn button p {
+    height: 70%;
+    width: 1px;
+    margin: 0rem .3rem;
+    background: var(--dark_custom);
+}
+
+/* ===== Login Modal design Ends here ===== */

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BillBook</title>
+        <!-- custom css starts here -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/colorSettings.css">
+        <link rel="stylesheet" href="../css/bootstrapEddit.css">
+        <!-- Bootstrap and its components -->
+        <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/hoverEffects.css">
+        <link rel="stylesheet" href="../css/customscroll.css">
+    
+        <style>
+            .nav-item.active:nth-child(3):after {
+                background-color: var(--colr_1_sec);
+            }
+        </style>
+    </head>
+
+<body class="__custom-body-css">
+    <!-- scroll to top feature -->
+    <div class="scrollToTop" id="ScrollToTop_Button">
+        <div class="scrollToTop-closer">
+            <a href="#">
+                <i class="fa fa-caret-up" id="backToTo_icon" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- color Settings -->
+    <div class="colorSettings" id="colorSettingsButton">
+        <div class="color-settings-closer">
+
+            <div class="clrBox">
+                <div id="colorOption1" class="clrOption"></div>
+                <div id="colorOption2" class="clrOption"></div>
+                <div id="colorOption3" class="clrOption"></div>
+            </div>
+
+            <div class="clrController">
+                <div class="clrController-closer">
+                    <div class="left order-sm-second" style="width: 1rem;">
+                        <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="right order-sm-first">
+                        <div class="up">
+                            <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>
+                        </div>
+                        <div class="down">
+                            <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- bootstrap modals -->
+    <div id="navigation-main-data" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="content" id="navModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Menu&nbsp;&amp;&nbsp;Navigations</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="__indexModal_sub-part-1">
+                        <h3 style="text-decoration: underline;">Navigation</h3>
+                        <ul class="navbar-nav flex-row __indexModal_sub-part-1-ul pl-5">
+                            <li class="nav-item active" style="">
+                                <a class="nav-link ListActive" data-dismiss="modal">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">H</span>ome
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-dismiss="modal" style="color: var(--navNonActive);">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">G</span>et <span class="listFirstLetter">S</span>tart
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./pages/tipTrict.html" class="nav-link">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">T</span>ips & <span
+                                        class="listFirstLetter">T</span>rick
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-dismiss="modal" style="color: var(--navNonActive);">
+                                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">F</span>eed<span class="listFirstLetter">B</span>ack
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="__indexModal_sub-part-1">
+                        <h3>
+                            Receipt Navs
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </h3>
+                        <ul class="navbar-nav flex-row __indexModal_sub-part-2-ul pl-5">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-chain" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">C</span>reate <span class="listFirstLetter">N</span>ew
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">D</span>ismiss <span
+                                        class="listFirstLetter">B</span>ill
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">P</span>ast <span
+                                        class="listFirstLetter">R</span>ecord
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="__indexModal_sub-part-1">
+                        <h3>
+                            Customers
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </h3>
+                        <ul class="navbar-nav flex-row __indexModal_sub-part-2-ul pl-5">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">R</span>ecord
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">M</span>anage
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-rupee" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">C</span>redit <span
+                                        class="listFirstLetter">R</span>ecord
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="__indexModal_sub-part-2">
+                        <div class="__indexModal_sub-part-2-closer">
+                            <div class="ModalSubLogo">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <div class="ModalSubData cursor-default">
+                                <h4>Admin Section</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="__indexModal_sub-part-1">
+                        <h3>
+                            Expanse & Stocks Manager
+                            <!-- <i class="fa fa-circle" aria-hidden="true"></i> -->
+                        </h3>
+                        <ul class="navbar-nav flex-row __indexModal_sub-part-2-ul pl-5">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">S</span>tocks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">P</span>roduct <span
+                                        class="listFirstLetter">G</span>raph
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-language" aria-hidden="true"></i>
+                                    <span class="listFirstLetter">S</span>nippets
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation" id="Navbar">
+        <div class="logo-brand_main-container col-sm-8 col-md-6">
+            <div class="logo">
+                <div class="navigation-logo"></div>
+            </div>
+            <div class="navigation-brand ml-3">
+                <p class="mt-auto mb-0 cursor-default"><span class="navigation-brand-A">B</span><span
+                        class="navigation-brand-B">i</span><span class="navigation-brand-A">ll</span>&nbsp;<span
+                        class="navigation-brand-A">B</span><span class="navigation-brand-B">oo</span><span
+                        class="navigation-brand-A">K</span></p>
+            </div>
+        </div>
+
+        <div class="navigation-extend-container">
+            <a data-toggle="modal" data-target="#navigation-main-data" class="btn navigationModalOpner">
+                <i class="navigation-extend-btn fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- boorstrap add on -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/color_settings.js"></script>
+    <script src="../scripts/json_settings_tips.js"></script>
+</body>
+
+</html>
