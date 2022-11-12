@@ -205,11 +205,16 @@
     </div>
 
     <div class="modal fade" id="loginModal" role="dialog">
-        <div class="modal-dialog modal-dialog-centered __loginmModal-XLG" role="content" id="loginModal">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered __loginmModal-XLG __customBordeForLoginModal" role="content" id="loginModal">
+            <div class="modal-content" style="min-width: max-content;">
                 <div class="__customLoginModal-closer">
-                    <div class="__loginModal-left d-flex align-items-center justify-content-center">    
-                        <div class="__loginModal-left-closer">
+                    <div class="__loginModal-left flex-column d-flex align-items-center">    
+                        <div class="__modalClosing order-sm-first">
+                            <button type="button" class="close __modalClosingBtn-custom" data-dismiss="modal">
+                                <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="__loginModal-left-closer my-auto">
                             <div class="__designPart"></div>
                             <div class="__dataPart">
                                 <div class="branding">
@@ -255,10 +260,10 @@
                                     <div class="__input-group d-flex align-items-center">
                                         <input type="submit" value="Login">
                                         <div class="__login-refer ml-3">
-                                            <span>New User?&nbsp;<a href="./pages/signup.html">Sign Up</a></span>
+                                            <span class="cursor-default">New User?&nbsp;<a href="./pages/signup.html">Sign Up</a></span>
                                         </div>
                                     </div>
-                                    <div class="bottom-part">
+                                    <div class="bottom-part ">
                                         <div class="__login-modal-bottom-heading">
                                             <span>Or Login With</span>
                                             <p></p>

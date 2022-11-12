@@ -1,3 +1,7 @@
+.modal{
+    overflow: scroll;
+}
+
 .modal-title {
     font-size: calc(100% + 1rem);
 }
@@ -171,7 +175,6 @@ form .form-row .form-group textarea:focus {
 /* ===== Login Modal design Starts here ===== */
 .__loginmModal-XLG {
     min-width: 75vw !important;
-    border: 1px solid #fff;
 }
 
 .__loginmModal-XLG .modal-content {
@@ -202,6 +205,10 @@ form .form-row .form-group textarea:focus {
     flex-direction: column;
 }
 
+.branding{
+    min-width: 23rem;
+}
+
 .__dataPart .branding p {
     line-height: normal;
     width: fit-content;
@@ -218,6 +225,7 @@ form .form-row .form-group textarea:focus {
 .__customLoginModal-closer .__loginModal-left {
     width: 25vw;
     height: calc(100vh - 5rem);
+    min-width: max-content;
 }
 
 .__loginModal-left .__loginModal-left-closer {
@@ -294,6 +302,7 @@ form .form-row .form-group textarea:focus {
     margin-right: 8rem;
     cursor: pointer;
     font-size: 2rem;
+    color: var(--colr_1_sec);
 }
 
 .__forgot-passowrd-panel {
@@ -304,12 +313,10 @@ form .form-row .form-group textarea:focus {
 .__forgot-passowrd-panel a {
     color: var(--colr_1_sec);
     text-decoration: underline;
-    transition: all .2s ease-in;
 }
 
-.__forgot-passowrd-panel a:hover {
-    color: var(--colr_1_pri);
-    transition: all .2s ease-in;
+.__forgot-passowrd-panel a:hover{
+    color: var(--colr_1_sec);
 }
 
 .__input-group input[type='checked']:checked {
@@ -396,4 +403,26 @@ form .form-row .form-group textarea:focus {
     background: var(--dark_custom);
 }
 
+.__modalClosing{
+    width: 100%!important;
+    display: flex;
+    align-items: initial;
+    padding: 1rem 2rem;
+}
+
+.__modalClosingBtn-custom{
+    color: var(--colr_1_sec)!important;
+    font-size: 3rem!important;
+    text-shadow: none!important;
+    transition: all .2s ease-in;
+}
+
+.__modalClosingBtn-custom:hover{
+    color: var(--colr_1_pri)!important;
+    transition: all .2s ease-in;
+}
+
+.__customBordeForLoginModal{
+    border: 1px solid var(--colr_1_ultraLight)!important;
+}
 /* ===== Login Modal design Ends here ===== */
