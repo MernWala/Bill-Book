@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BillBook</title>
-        <!-- custom css starts here -->
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/colorSettings.css">
-        <link rel="stylesheet" href="../css/bootstrapEddit.css">
-        <!-- Bootstrap and its components -->
-        <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
-        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/hoverEffects.css">
-        <link rel="stylesheet" href="../css/customscroll.css">
-    
-        <style>
-            .nav-item.active:nth-child(3):after {
-                background-color: var(--colr_1_sec);
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillBook</title>
+    <!-- custom css starts here -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/colorSettings.css">
+    <link rel="stylesheet" href="../css/bootstrapEddit.css">
+    <!-- Bootstrap and its components -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/hoverEffects.css">
+    <link rel="stylesheet" href="../css/customscroll.css">
+    <link rel="stylesheet" href="../css/SignUp.css">
+</head>
 
 <body class="__custom-body-css">
     <!-- scroll to top feature -->
@@ -76,30 +71,29 @@
                     <div class="__indexModal_sub-part-1">
                         <h3 style="text-decoration: underline;">Navigation</h3>
                         <ul class="navbar-nav flex-row __indexModal_sub-part-1-ul pl-5">
-                            <li class="nav-item active" style="">
-                                <a class="nav-link ListActive" data-dismiss="modal">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link" style="color: var(--navNonActive);">
                                     <i class="fa fa-home" aria-hidden="true"></i>
                                     <span class="listFirstLetter">H</span>ome
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" data-dismiss="modal" style="color: var(--navNonActive);">
+                                <a href="../index.html#section2" class="nav-link" style="color: var(--navNonActive);">
                                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                     <span class="listFirstLetter">G</span>et <span class="listFirstLetter">S</span>tart
                                 </a>
                             </li>
 
-                            <li class="nav-item">
-                                <a href="./pages/tipTrict.html" class="nav-link">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">
                                     <i class="fa fa-bolt" aria-hidden="true"></i>
-                                    <span class="listFirstLetter">T</span>ips & <span
-                                        class="listFirstLetter">T</span>rick
+                                    Tips & Tricks
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" data-dismiss="modal" style="color: var(--navNonActive);">
+                                <a href="../index.html#section4" class="nav-link" style="color: var(--navNonActive);">
                                     <i class="fa fa-commenting" aria-hidden="true"></i>
                                     <span class="listFirstLetter">F</span>eed<span class="listFirstLetter">B</span>ack
                                 </a>
@@ -226,6 +220,256 @@
             </a>
         </div>
     </div>
+
+    <div class="jumbotron mt-5">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col sm-12">
+                    <h1>Sign Up</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="__signUpContainer container my-5">
+        <div class="row justify-content-center my-5">
+            <div class="row-header">
+                <h2>Registration Form</h2>
+            </div>
+        </div>
+        <div class="__signupContainer-closer row m-1">
+            <form action="" method="post" class="d-flex align-items-center flex-column">
+                <div class="__signUp-part-1 __signUp-row width-100">
+                    <div class="__signUp-part-closer">
+                        <div class="__signUp-row justify-content-right d-flex">
+                            <input type="text" name="gstNumber" id="GST_Number_top" placeholder="GST Number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="__signUp-part-2 __signUp-row width-100">
+                    <div class="__signUp-part-closer d-flex align-items-center justify-content-evenly">
+                        <div class="__signUp--A">
+                            <div class="__logoPreview"></div>
+                            <div class="__uploadBtn">
+                                <input type="file" name="signUp-logo" id="SignUpLogo" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="__signUp--B">
+                            <div class="__signUp-row">
+                                <input type="text" name="tradingName" id="TradingName" placeholder="Trading Name" style="width: 100%; font-size: 2.5rem;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="__signUp-part-3 __signUp-row my-5 width-100">
+                    <div class="__signUp-part-closer d-flex justify-content-evenly">
+                        <div class="__signUp--A">
+                            <textarea name="Address" id="address" cols="70" rows="1" placeholder="Address"></textarea>
+                        </div>
+                        <div class="__signUp--B mt-auto" id="selectDetails" style="width: fit-content;">
+                            <select name="state" id="State">
+                                <option value="">-- State --</option>
+                                <!-- try to defend this section via javascript and json -->
+                            </select>
+                            <input type="number" name="pincode" id="AreaCode" size="6" placeholder="Area Code" class="ml-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="__signUp-part-4 __signUp-row my-5">
+                    <div class="__signUp-part-closer" style="padding: 2rem 10rem;">
+                        <div class="row-header __signUp--A mx-auto">
+                            <h2>GST Information</h2>
+                        </div>
+                        <div class="__signUp--B mt-5 d-flex justify-content-between" style="width: 55%;">
+                            <input type="text" name="gstNumber" id="GST_Number_front" placeholder="GST Number">
+                            <input type="file" name="gstfile" id="GST-Docx" class="ml-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="__signUp-part-5 __signUp-row">
+                    <div class="__signUp-part-closer" style="padding: 2rem 10rem;">
+                        <div class="row-header __signUp--A mx-auto">
+                            <h2 class="d-flex">Bank Details</h2>
+                        </div>
+                        <div class="__signUp--B width-100">
+                            <div class="__signUp-row mt-5">
+                                <select name="bankSelect" id="BankName">
+                                    <option value="">-- Bank Name --</option>
+                                    <!-- try to defend this section via javascript and json -->
+                                    <input type="file" name="passbook" id="passbook" accept=".pdf" class="ml-4">
+                                </select>
+                            </div>
+                            <div class="__signUp-row mt-4">
+                                <input type="text" name="IfscCode1" id="IfscCode-1" placeholder="IFSC Code">
+                                <input type="text" name="IfscCode2" id="IfscCode-2" placeholder="Re - Enter IFSC" class="ml-4">
+                            </div>
+                            <div class="__signUp-row">
+                                <input type="number" name="ac_number1" id="ac_number1" placeholder="Account Number">
+                                <input type="number" name="ac_number2" id="ac_number2"
+                                    placeholder="Re - Enter Account Number" class="ml-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="__signUp-part-6 __signUp-row my-3" style="width: 90%;">
+                    <div class="__signUp-part-closer">
+                        <div class="__signUp-row">
+                            <input type="checkbox" name="Terms_Condition" id="Terms_Condition">
+                            <label for="Terms_Condition" class="ml-2">I accept T&C of Bill Book</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="__signUp-part-7 __signUp-row my-4" style="width: 90%;">
+                    <div class="__signUp-part-closer">
+                        <div class="__signUp-row">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="footer" class="footerCommonAll mt-5">
+        <div class="footer-closer">
+            <div class="footer-sub-part_logo mt-auto mb-auto">
+                <div class="footer-sub-part-closer_logoPart d-flex align-items-center justify-content-center">
+                    <div class="logo"></div>&nbsp;&nbsp;
+                    <div class="branding">
+                        <p class="mt-auto mb-0 cursor-default">
+                            <span class="navigation-brand-A_heading">B</span>
+                            <span class="navigation-brand-B_heading">i</span>
+                            <span class="navigation-brand-A_heading">ll</span>
+                            &nbsp;
+                            <span class="navigation-brand-A_heading">B</span>
+                            <span class="navigation-brand-B_heading">oo</span>
+                            <span class="navigation-brand-A_heading">K</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap" style="height: fit-content;">
+                <div class="footer-sub-part">
+                    <div class="footer-sub-part-closer">
+                        <span class="header">Navigation&nbsp;&nbsp;</span>
+                        <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
+                            <li class="footer-item">
+                                <a href="../index.html" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../index.html#section2" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Get Start
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="./tipTrict.html" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Tips & Trick
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../index.html#section4" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Feedback
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-sub-part">
+                    <div class="footer-sub-part-closer">
+                        <span class="header">Receipt Navs&nbsp;&nbsp;</span>
+                        <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Create New
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Dissmiss Bill
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Past Record
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-sub-part">
+                    <div class="footer-sub-part-closer">
+                        <span class="header">Customers&nbsp;&nbsp;</span>
+                        <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Record
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Manage
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Credit Record
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-sub-part">
+                    <div class="footer-sub-part-closer">
+                        <span class="header">Admin Section&nbsp;&nbsp;</span>
+                        <ul class="navbar-nav flex-column mr-auto" style="width: fit-content;">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Stock
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Product Graph
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer-itemIcon fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Snippets
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightStatus">
+            <div class="copyrightStatus-closer">
+                <span class="footer-PreCopyrightText cursor-default" style="padding-left: 5vw;">© 2022 Copyright
+                    :</span><a href="./index.html" class="ml-1">BillBook.com</a>
+            </div>
+        </div>
+    </section>
 
     <!-- boorstrap add on -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
